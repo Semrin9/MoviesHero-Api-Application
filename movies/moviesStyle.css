@@ -289,6 +289,7 @@ img {
     padding: 0.7rem 1.3rem 0.5rem 1.3rem;
     margin: 20px 0;
     line-height: 1.4;
+    border-radius: 5px;
     background: var(--light-dark-color);
     transition: box-shadow 1s ease;
 }
@@ -329,6 +330,63 @@ article img {
     color: #CF0A0A;
 }
 
+
+/* Game section */
+
+.games-section-title {
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--md-dark-color);
+    color: #d4d3d3;
+}
+
+.games-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2.5% 19% 3% 19%;
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.game-card {
+    flex: 0 0 47%;
+    padding: 0.7rem 1.3rem 0.5rem 1.3rem;
+    margin: 20px 0;
+    line-height: 1.4;
+    background: var(--light-dark-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.game-card a {
+    color: #d4d3d3;
+}
+
+.game-card h2 { 
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.game-card img {
+    display: block;
+    width: 100%;
+    max-height: 390px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.game-card p {
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: large;
+}
+
+
 /* Footer */
 #footer {
     padding: 2%;
@@ -347,6 +405,10 @@ article img {
 @media(max-width: 1400px) {
     .bottom article {
         flex: 0 0 47%;
+    }
+
+    .games-container {
+        padding: 2.5% 10% 3% 10%;
     }
 }
 
@@ -411,6 +473,10 @@ article img {
     .bottom {
         padding: 2% 10%;
     }
+
+    .game-card {
+        flex: 0 0 100%;
+    }
 }
 
 @media(max-width: 450px) {
@@ -454,4 +520,5 @@ article img {
     .br {
         margin: 0;
     }
+
 }
