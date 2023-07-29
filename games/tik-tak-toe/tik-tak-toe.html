@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Toe</title>
+    <link rel="stylesheet" href="tik-tak-toeStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="icon" href="../media/favicon.ico">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1 class="title">Tic Tac Toe</h1>
+        <h2 id="statusText"></h2>
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+
+        <div class="choose-level">
+            <h3>Choose Level</h3>
+            <div class="radio-buttons">
+                <input type = "radio" name = "level" value = "easy" checked>
+                <label for="level1">Noop</label>
+
+                <input type="radio" name="level" value="medium">
+                <label for="level2">Medium</label>
+                
+                <input type = "radio" name = "level" value = "hard"> 
+                <label for="level2">Expert</label>
+            </div>
+            <button id="restartBtn">Restart</button>
+         </div>
+    </div>
+    <script src="tik-tak-toeScript.js"></script>
+</body>
+</html>
